@@ -1,7 +1,7 @@
 svirt-interpose
 ===============
 
-A stand-alone implementation of sVirt intended to be interposed between a Xen toolstack and qemu.
+A stand-alone implementation of sVirt intended to be interposed between a Xen toolstack and QEMU.
 
 Building
 --------
@@ -11,11 +11,11 @@ Once those are installed building should just be a matter of running make in the
 Installing
 ----------
 Building the binary should be simple, installing it is a bit less so.
-The binary is intended to be interposed between a Xen toolstack and qemu.
-That is to say that you should move your current qemu binary to /opt/xensource/libexec/qemu-dm-wrapper-old  (currently hard-coded but should be configurable) and replace it with svirt-interpose.
+The binary is intended to be interposed between a Xen toolstack and QEMU.
+That is to say that you should move your current QEMU binary to /opt/xensource/libexec/qemu-dm-wrapper-old  (currently hard-coded but should be configurable) and replace it with svirt-interpose.
 
 For example:
-If your old qemu binary is at /bin/qemu you should copy it to the path above:
+If your old QEMU binary is at /bin/qemu you should copy it to the path above:
 # cp /opt/xensource/libexec/qemu-dm-wrapper-old
 And replace it with the svirt-interpose binary:
 # cp ./src/svirt-interpose /bin/qemu
