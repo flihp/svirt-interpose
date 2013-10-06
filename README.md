@@ -16,6 +16,10 @@ That is to say that you should move your current QEMU binary to /opt/xensource/l
 
 For example:
 If your old QEMU binary is at /bin/qemu you should copy it to the path above:
+```sh
 # cp /opt/xensource/libexec/qemu-dm-wrapper-old
+```
 And replace it with the svirt-interpose binary:
+```sh
 # cp ./src/svirt-interpose /bin/qemu
+```
